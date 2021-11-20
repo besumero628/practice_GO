@@ -14,4 +14,26 @@ func main()  {
 	// %v, %T
 	fmt.Printf("数値 = %v, 言語 = %v\n", 5, "文字列")
 	fmt.Printf("数値 = %T, 言語 = %T\n", 5, "文字列")
+
+	// 変数
+	var x, y, z int
+
+	var (
+		n int
+		name string
+	)
+
+	i := 1
+	b := true
+	f := 3.14
+	s := "abc"
+
+	n2 := one()
+
+	fmt.Printf("%v,%v,%v,%v,%v,%v,%v,%v,%v,%v\n",x,y,z,n,name,i,b,f,s,n2)
+
+}
+
+func one() int {
+	return 1
 }
