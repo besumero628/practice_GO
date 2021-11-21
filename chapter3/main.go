@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 func main()  {
@@ -31,6 +32,13 @@ func main()  {
 	n2 := one()
 
 	fmt.Printf("%v,%v,%v,%v,%v,%v,%v,%v,%v,%v\n",x,y,z,n,name,i,b,f,s,n2)
+
+	// math
+	fmt.Printf("unit32 max value = %d\n", math.MaxUint32)
+
+	// 配列
+	a := [3]int{1,20,300}
+	fmt.Printf("%v\n", a)
 
 }
 
