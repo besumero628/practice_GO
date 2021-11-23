@@ -40,6 +40,10 @@ func main()  {
 	a := [3]int{1,20,300}
 	fmt.Printf("%v\n", a)
 
+	// interface{},nil
+	var xx interface{}
+	fmt.Printf("%#v\n", xx)
+
 }
 
 func one() int {
