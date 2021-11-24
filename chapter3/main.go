@@ -5,6 +5,16 @@ import (
 	"math"
 )
 
+func one() int {
+	return 1
+}
+
+func div(a, b int) (int, int) {
+	q := a / b
+	r := a % b
+	return q, r
+}
+
 func main()  {
 	// Println
 	fmt.Println("test")
@@ -44,8 +54,7 @@ func main()  {
 	var xx interface{}
 	fmt.Printf("%#v\n", xx)
 
-}
-
-func one() int {
-	return 1
+	// 関数
+		q,r := div(19,7)
+		fmt.Printf("商= %d, 余剰= %d\n", q, r)
 }
