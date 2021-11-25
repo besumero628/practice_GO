@@ -55,6 +55,9 @@ func main()  {
 	fmt.Printf("%#v\n", xx)
 
 	// 関数
-		q,r := div(19,7)
-		fmt.Printf("商= %d, 余剰= %d\n", q, r)
+	q,r := div(19,7)
+	fmt.Printf("商= %d, 余剰= %d\n", q, r)
+
+	// 無名関数 
+	fmt.Printf("f= %v\n", func (x, y int) int {return x+y}(2,3))
 }
