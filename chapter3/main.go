@@ -60,4 +60,6 @@ func main()  {
 
 	// 無名関数 
 	fmt.Printf("f= %v\n", func (x, y int) int {return x+y}(2,3))
+	fmt.Printf("f= %v\n", func (x, y int) int {return x*y}(4,5))
+	
 }
