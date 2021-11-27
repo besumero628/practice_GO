@@ -15,6 +15,12 @@ func div(a, b int) (int, int) {
 	return q, r
 }
 
+func returnFunc() func() {
+	return func ()  {
+		fmt.Println("I'm a function")
+	}
+}
+
 func main()  {
 	// Println
 	fmt.Println("test")
@@ -61,5 +67,9 @@ func main()  {
 	// 無名関数 
 	fmt.Printf("f= %v\n", func (x, y int) int {return x+y}(2,3))
 	fmt.Printf("f= %v\n", func (x, y int) int {return x*y}(4,5))
+
+	// 関数を返す関数
+	ff := returnFunc()
+	ff()
 	
 }
