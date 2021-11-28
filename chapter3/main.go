@@ -21,6 +21,15 @@ func returnFunc() func() {
 	}
 }
 
+func later() func(string) string {
+	var store string
+	return func(next string) string {
+		s := store
+		store = next
+		return s
+	}
+}
+
 func main()  {
 	// Println
 	fmt.Println("test")
@@ -72,4 +81,10 @@ func main()  {
 	ff := returnFunc()
 	ff()
 	
+	// クロージャ
+	fff := later()
+
+	fmt.Println(fff("Go lang"))
+	fmt.Println(fff("is"))
+	fmt.Println(fff("awesome!"))
 }
