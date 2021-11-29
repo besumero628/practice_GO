@@ -5,6 +5,8 @@ import (
 	"math"
 )
 
+const ONE = 1
+
 func one() int {
 	return 1
 }
@@ -28,6 +30,11 @@ func later() func(string) string {
 		store = next
 		return s
 	}
+}
+
+func one_two() (int,int) {
+	const TWO = 2
+	return ONE, TWO
 }
 
 func main()  {
@@ -87,4 +94,8 @@ func main()  {
 	fmt.Println(fff("Go lang"))
 	fmt.Println(fff("is"))
 	fmt.Println(fff("awesome!"))
+
+	// 定数
+	xx, yy := one_two()
+	fmt.Printf("%d, %d\n", xx, yy)
 }
