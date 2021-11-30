@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"chapter3/foo"
 )
 
 const ONE = 1
@@ -98,4 +99,8 @@ func main()  {
 	// 定数
 	xx, yy := one_two()
 	fmt.Printf("%d, %d\n", xx, yy)
+
+	// パッケージからの参照
+	fmt.Printf("%d\n",foo.MAX)
+	foo.FooFunc(1)
 }
