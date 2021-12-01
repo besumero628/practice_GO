@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math"
 	"chapter3/foo"
+	. "chapter3/bar"
 )
 
 const ONE = 1
@@ -103,4 +104,7 @@ func main()  {
 	// パッケージからの参照
 	fmt.Printf("%d\n",foo.MAX)
 	foo.FooFunc(1)
+
+	// パッケージの省略
+	fmt.Printf("%v\n",MIN)
 }
