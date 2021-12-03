@@ -107,4 +107,9 @@ func main()  {
 
 	// パッケージの省略
 	fmt.Printf("%v\n",MIN)
+
+	// for文
+	for i := 1; i < 10; i++ {
+		fmt.Printf("%v\n", i)
+	}
 }
